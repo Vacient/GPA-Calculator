@@ -97,7 +97,7 @@ function renderCourses() {
   if (courses.length === 0) {
     coursesContainer.innerHTML = `
       <div style="text-align:center; padding: 2rem; background: #f5f7fb; border-radius: 1.2rem; color: #566b82;">
-        📭 No courses added yet.<br>Click "Add Course" to start selecting grades.
+        No courses added yet.<br>Click "Add Course" to start.
       </div>
     `;
     updateGpaDisplay();
@@ -123,7 +123,7 @@ function renderCourses() {
           ${gradePoint.toFixed(2)} pts<br>
           <span class="preview-range">${marksRange}</span>
         </div>
-        <button class="remove-course" data-id="${course.id}">✖</button>
+        <button class="remove-course" data-id="${course.id}">Delete</button>
       </div>
     `;
   }
